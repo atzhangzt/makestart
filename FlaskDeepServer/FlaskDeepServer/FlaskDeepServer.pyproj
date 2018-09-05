@@ -17,6 +17,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>FlaskDeepServer</Name>
     <RootNamespace>FlaskDeepServer</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda35-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,6 +75,9 @@
     <Content Include="FlaskDeepServer\templates\contact.html" />
     <Content Include="FlaskDeepServer\templates\index.html" />
     <Content Include="FlaskDeepServer\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda35-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
