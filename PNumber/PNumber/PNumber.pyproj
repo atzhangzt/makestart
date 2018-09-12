@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d62f45b1-e120-456d-995b-5df1705df65b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>mnist.py</StartupFile>
+    <StartupFile>MnistCNN.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,12 +22,27 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="mnist.py">
+    <Compile Include="FImage.py" />
+    <Compile Include="MnistLogistic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MnistCNN.py" />
+    <Compile Include="MnistNeural.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda35-64" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="data\mnist\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\mnist\t10k-images-idx3-ubyte.gz" />
+    <Content Include="data\mnist\t10k-labels-idx1-ubyte.gz" />
+    <Content Include="data\mnist\train-images-idx3-ubyte.gz" />
+    <Content Include="data\mnist\train-labels-idx1-ubyte.gz" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
