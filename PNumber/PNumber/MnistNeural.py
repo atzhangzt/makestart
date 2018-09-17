@@ -24,7 +24,7 @@ X4 = CreateHiddenLayer(X3,100,50)
 X5 = CreateHiddenLayer(X4,50,10)
 
 loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels = y, logits = X5))
-opt = tf.train.GradientDescentOptimizer(learning_rate = .1).minimize(loss)
+opt = tf.train.AdamOptimizer().minimize(loss)
 
 correct_prediction = tf.equal(tf.argmax(X5,1), tf.argmax(y,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))

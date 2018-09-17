@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d62f45b1-e120-456d-995b-5df1705df65b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MnistCNN.py</StartupFile>
+    <StartupFile>MnistRNN.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,6 +28,9 @@
     </Compile>
     <Compile Include="MnistCNN.py" />
     <Compile Include="MnistNeural.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MnistRNN.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
