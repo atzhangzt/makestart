@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>81acbae2-f643-432b-96f3-373ac0d5a7f7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>stock_basics.py</StartupFile>
+    <StartupFile>hist_data.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,7 +25,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StockCrawler.py" />
-    <Compile Include="stocks.py">
+    <Compile Include="hist_data.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
