@@ -7,7 +7,7 @@ from tensorflow.contrib import rnn
 from tensorflow.examples.tutorials.mnist import input_data
 
 config = tf.ConfigProto()
-config.gpu_options.allow_growth = True
+#config.gpu_options.allow_growth = True
 sess = tf.Session(config=config)
 mnist = input_data.read_data_sets('data/mnist/', one_hot=True)
 
