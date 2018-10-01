@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>81acbae2-f643-432b-96f3-373ac0d5a7f7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>hist_data.py</StartupFile>
+    <StartupFile>WordSplitCnn.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,11 +21,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="stock_basics.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="hist_data.py" />
     <Compile Include="StockCrawler.py" />
-    <Compile Include="hist_data.py">
+    <Compile Include="stock_basics.py" />
+    <Compile Include="WordSplitCnn.py" />
+    <Compile Include="WordSplit.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
